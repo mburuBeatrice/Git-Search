@@ -1,15 +1,23 @@
 <div *ngIf="search">
 <div class="panel panel-default">
 <div class="panel-heading">
-  {{search.name}}<small>{{search.login}}</small>
+  {{search.name}}
   <span *ngIf=""search.company>,Works at {{search.company}}</span>
 </div>
 <div class="panel-body">
   <div class="row">
     <div class="col-md-3">
-      <img src="{{search.avatar_url}}" alt="">
+      <img src="{{search.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
     </div>
+<div class="col-md-5">
+  <ul class="list-group">
+<li class="list-group-item" *ngIf="search.bio">{{search.bio}}</li>
+<li class="list-group-item" *ngIf="search.followers">{{search.followers}}</li>
+<li class="list-group-item" *ngIf="search.following">{{search.following}}</li>
+<li class="list-group-item" *ngIf="search.public_repos">{{search.public_repos}}</li>
 
+  </ul>
+</div>
   </div>
 </div>
 </div>
