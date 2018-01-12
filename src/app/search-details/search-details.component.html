@@ -1,5 +1,15 @@
-<div class="container">  
-<div class="jumbotron">
-  <h2>{{search.name}}</h2>
+<div *ngIf="search">
+<div class="panel panel-default">
+<div class="panel-heading">
+  {{search.name}}<small>{{search.login}}</small>
+  <span *ngIf=""search.company>,Works at {{search.company}}</span>
+</div>
+<div class="panel-body">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{search.avatar_url}}" alt="">
+    </div>
+
+  </div>
 </div>
 </div>
