@@ -6,15 +6,15 @@ import 'rxjs/add/operator/map';
 export class SearchService {
 
 private username:string;
-private clientid = '72a59fe8ac9f259da7d72922f3f4b0bc91a423d3';
-private clientsecret = '';
+private access_token = '72a59fe8ac9f259da7d72922f3f4b0bc91a423d3';
+
   constructor(private http:HttpClient) {
 console.log('service is now ready');
 this.username = 'mburuBeatrice';
    }
 
 getSearchInfo(){
-return this.http.get("https://api.github.com/users/" + this.username + "$client_id=" + this.clientid + "$client_secret=" + this.clientsecret)
+return this.http.get("https://api.github.com/users/" + this.username + "?access_token=" + this.access_token )
 .map(res => res);
 }
 }
