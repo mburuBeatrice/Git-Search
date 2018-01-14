@@ -1,3 +1,8 @@
+<form  action="">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search with username">
+  </div>
+</form>
 <div *ngIf="search">
 <div class="panel panel-default">
 <div class="panel-heading">
@@ -31,7 +36,8 @@
     <h4 class="panel-title">Repos</h4>
   </div>
   <div class="panel-body" *ngFor="let repo of repos">
-    <p>{{repo.name}} </p>
+    <p>{{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning pull-right">View the project on github</a></p>
+    <p class="clearfix">{{repo.description}}</p>
   </div>
 </div>
   </div>
