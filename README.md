@@ -3,24 +3,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
-##description
+## Description
 This website allows a user to basically search a github user using their username. It returns the user information including, username, company, number of repositories, number of followers on github and the number of people they are following on github.
 
-###Setup and installation requirements.
-1.clone repository at [GitHub](https://github.com/mburuBeatrice/Git-Search.git).
-2Install Angular cli.
-3.Run nmp install.
-4.Install globals e.g. Typescript packages and typescript.
-5.npm install typescript -g
-6.apm install atom-typescript
+### Setup and installation requirements.
+* clone repository at [GitHub](https://github.com/mburuBeatrice/Git-Search.git).
+* Install Angular cli.
+* Run nmp install.
+* Install globals e.g. Typescript packages and typescript.
+* npm install typescript -g
+* apm install atom-typescript
 
-##Technologies used
-1.HTML
-2.css
-3.JavaScript
-4.TypeScript
-5.Node.js
-6.Angular
+## Technologies used
+* HTML
+* css
+* JavaScript
+* TypeScript
+* Node.js
+* Angular
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -44,10 +45,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Support and contact details
 Incase you have any issues using this code feel free  to contact me through mburubeatricewanjiru@gmail.com or leave a comment here on [GitHub](https://github.com/mburuBeatrice).
 
-##License
+## License
 *MIT License*
-
-*Copyright (c) 2017 Beatrice Mburu*
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
