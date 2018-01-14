@@ -1,6 +1,6 @@
-<form  action="">
+<form  action="" class="search-form">
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search with username">
+    <input type="text" class="form-control" placeholder="Search with username" [(ngModel)]="username" name="username" (keyup)="findSearch()">
   </div>
 </form>
 <div *ngIf="search">

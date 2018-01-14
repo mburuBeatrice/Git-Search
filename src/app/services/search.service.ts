@@ -22,4 +22,7 @@ getSearchRepos(){
 return this.http.get("https://api.github.com/users/" + this.username + "/repos?access_token=" + this.access_token )
 .map(res => res);
 }
+updateSearch(username:string){
+  this.username = username;
+}
 }
