@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
  import {SearchService} from './services/search.service';
+ import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import {SearchDetailsComponent} from './search-details/search-details.component';
@@ -14,7 +15,8 @@ import {SearchDetailsComponent} from './search-details/search-details.component'
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [SearchService],
   bootstrap: [AppComponent]
