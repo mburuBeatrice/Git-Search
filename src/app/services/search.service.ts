@@ -17,4 +17,9 @@ getSearchInfo(){
 return this.http.get("https://api.github.com/users/" + this.username + "?access_token=" + this.access_token )
 .map(res => res);
 }
+
+// getSearchRepos(){
+// return this.http.get("https://api.github.com/users/" + this.username + "/repos?access_token=" + this.access_token )
+// .map(res => res);
+// }
 }

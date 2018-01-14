@@ -6,10 +6,10 @@
 </div>
 <div class="panel-body">
   <div class="row">
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <img src="{{search.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
     </div>
-<div class="col-md-5">
+<div class="col-sm-5">
 <ul class="list-group">
   <li class="list-group-item" *ngIf="search.bio">{{search.bio}}</li>
   <li class="list-group-item"  *ngIf="search.email"><a href="emailto:{{search.email}}"></a>{{search.email}}</li>
@@ -17,7 +17,7 @@
 
 
 </div>
-<div class="col-md-4">
+<div class="col-sm-4">
 <div>
   <p>
   <span class="label label-default">{{search.followers}}Followers</span>
@@ -25,7 +25,15 @@
   <span class="label label-success">{{search.public_gists}}Public_gists</span>
   <span class="label label-info">{{search.public_repos}} Public Repos</span>
 </p>
-<p><a href="{{search.html_url}}" class="btn btn-success btn-sm">View profile</a></p>
+<p><a href="{{search.html_url}}" class="btn btn-success btn-sm" target="_blank">View profile</a></p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">Repos</h4>
+  </div>
+  <div class="panel-body" *ngFor="let repo of repos">
+    <p>{{repo.name}} </p>
+  </div>
+</div>
   </div>
 </div>
 </div>
